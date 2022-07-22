@@ -1,4 +1,97 @@
-html{
+html, body{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
+body{
+    overflow-y:hidden;
+}
+
+button{
+    border: none;
+}
+
+
+header {  
+    background-color: #3F51B5;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        margin-left: 24px;
+
+        &__text{
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: -0.0555556px;
+            margin-left: 8px;
+            font-weight: 500;
+        }
+    }
+
+    .pro-version{
+        width: 842px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        background: #3333333b;
+        border-radius: 4px;
+        font-size: 14px;
+        margin-left: 34px;
+
+        button{
+            width: 37px;
+            height: 19px;
+            background-color: #26A69A;
+            font-weight: 500;
+            font-size: 10px;
+            text-align: center;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-left: 6px;
+        }
+
+        p{
+            font-weight: 400;
+            color: #CDD1EA;
+            margin-left: 14px;
+        }
+
+        a{
+            color: #ffffff;
+            padding-left: 5px;
+        }
+    }
+
+    .icon{
+        position: absolute;
+        right: 0;
+
+        button{
+            background: none;
+            margin-right: 22px;
+            cursor: pointer;
+        }
+    }
+}
+
+.main{
+    display: flex;
+}
+
+aside { 
+    width: 270px;
+    height: 100vh;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
+}
+
+
+
