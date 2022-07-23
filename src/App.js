@@ -24,7 +24,7 @@ function App() {
       </header>
       <div className="main">
         <aside>
-          <p>Menu</p>
+          <p></p>
         </aside>
         <section>
           <p>Section</p>
