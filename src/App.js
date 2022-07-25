@@ -32,38 +32,36 @@ function App() {
           </div>
           <hr></hr>
           <nav className="menu__item">
-            <ul>
-              <li className="item">
+              <button className="item">
                 <img className="item__img" width={19} height={19} src="/img/dashboard.svg" alt="Dashboard" />
                 <p>Dashboard</p>
-              </li>
-              <li className="item">
+              </button>
+              <button className="item">
                 <img className="item__img" width={19} height={19} src="/img/users.svg" alt="Users" />
                 <p>Users</p>
-              </li>
-              <li className="item">
+              </button>
+              <button className="item">
                 <img className="item__img" width={19} height={19} src="/img/products.svg" alt="Products" />
                 <p>Products</p>
-              </li>
-              <li className="item">
+              </button>
+              <button className="item">
                 <img className="item__img" width={19} height={19} src="/img/auth.svg" alt="Authentication" />
                 <p>Authentication</p>
-              </li>
-              <li className="item">
+              </button>
+              <button className="item">
                 <img className="item__img" width={19} height={19} src="/img/typography.svg" alt="Typography" />
                 <p>Typography</p>
-              </li>
-              <li className="item">
+              </button>
+              <button className="item">
                 <img className="item__img" width={19} height={19} src="/img/icons-images.svg" alt="Icons & Images" />
                 <p>Icons & Images</p>
-              </li>
+              </button>
               <hr className="hr-bottom"></hr>
               <p className="item-footer">Support</p>
-              <li className="item">
+              <button className="item">
                 <img className="item__img" width={19} height={19} src="/img/support.svg" alt="Support" />
                 <p>Support</p>
-              </li>
-            </ul>
+              </button>
           </nav>
         </aside>
         <section>
