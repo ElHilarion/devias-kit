@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-function Menu({toggleOpenMenu}) {
+function MenuMobile({toggleOpenMenu}) {
     return (
-        <aside className="menu--desctop">
+        <aside className="menu--mobile">
           <button className="menu-icon menu-icon--cancel" onClick={() => toggleOpenMenu(false)}>
-            <img width={30} height={30} src="./img/cancel.svg"/>
+            <img src="./img/cancel.svg"/>
           </button>
           <div className="menu__header">
-            <img className="item__img" width={100} height={100} src="/img/avatar.png" alt="Avatar" />
+            <img className="item__img" src="/img/avatar.png" alt="Avatar" />
             <h3>Roman Kutepov</h3>
             <p>Brain Director</p>
           </div>
@@ -48,4 +48,4 @@ function Menu({toggleOpenMenu}) {
     )
 }
 
-export default Menu;
+export default MenuMobile;
