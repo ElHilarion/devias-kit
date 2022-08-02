@@ -12,7 +12,6 @@ button{
     border: none;
 }
 
-
 header {  
     background-color: #3F51B5;
     height: 64px;
@@ -91,7 +90,7 @@ header {
 
 aside { 
     height: 100vh;
-    width: 270px;
+    width: 100%;
     border: 1px solid rgba(63, 63, 68, 0.005);
     box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.25);
 }

@@ -1,5 +1,6 @@
-.menu{
-    &__header{
+
+.menu--desctop, .menu--mobile{
+    .menu__header{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -33,7 +34,7 @@
         margin-top: 24px;
     }
 
-    &__item{
+    .menu__item{
         margin: 0 12px 12px 12px;
         list-style-type: none;
         padding-left: 0;
@@ -41,7 +42,7 @@
 
         .item{
             display: flex;
-            width: 242px;
+            width: 100%;
             align-items: center;
             cursor: pointer;
             padding-left: 16px;
@@ -71,4 +72,8 @@
         }
         
     }
+}
+
+.menu--mobile{
+    display: none;
 }
