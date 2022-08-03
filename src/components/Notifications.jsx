@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "../scss/notifications.scss";
+
 function Notifications() {
     return (
         <div className="notifications">

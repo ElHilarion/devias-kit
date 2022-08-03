@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "../scss/basicInfo.scss";
+
 function BasicInfo() {
     return (
         <div className="basic-info">

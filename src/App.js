@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
+import './scss/main.scss';
 import './scss/menu.scss';
-import './scss/section.scss';
 import './scss/media.scss';
 
 import Header from './components/Header';

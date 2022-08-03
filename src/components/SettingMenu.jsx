@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "../scss/settingMenu.scss";
+
 function SettingMenu({toggleOpenMenu}) {
     return (
         <div className="setting__profile-menu">
