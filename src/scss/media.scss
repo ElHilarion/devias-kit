@@ -1,0 +1,378 @@
+@media screen and (max-width: 1366px){
+    header{
+        .pro-version{
+            width: 724px !important;
+            font-size: 12px !important;
+            margin-left: 16px !important;
+        }
+    } 
+
+    .main{
+        grid-template-columns: 200px 1fr !important;
+
+        .setting__profile{
+
+            .profile__blocks{
+                margin: 10px 12px;
+
+                .upload-picture{
+                    width: 94%;
+
+                    .upload__info{
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 5px 10px;
+    
+                        .picture-info{
+                            text-align: center;
+                            margin-bottom: 10px;
+
+                            h1{
+                                margin: 0 0 4px 0;
+                            }
+                        }
+                    }
+                }
+                .basic-info{
+                    margin-bottom: 12px;
+
+                    form{
+                        row-gap: 10px;
+                        margin-bottom: 8px;
+
+                        .form-group{
+                            input{
+                                height: 30px;
+                            }
+
+                            label{
+                                left: 12px;
+                                font-size: 14px;
+                                margin-top: -3px;
+                            }
+
+                            p{
+                                font-size: 12px;
+                                margin: 3px 7px;
+                            }
+                        }
+                    }                    
+                }
+
+                .notifications{
+                    .not-checkboxes{
+                        .not__items{
+                            .not__item{
+                                margin-bottom: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .info__title{
+        h1{
+            margin: 5px 0;
+        }
+
+        p{
+            margin: 10px 16px;
+        }
+    }
+    
+    .btn-save{
+        margin: 12px 24px;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        overflow-y: auto !important;
+
+        header{
+            .logo{
+                margin-left: 12px;
+            }
+
+            .pro-version{
+                width: 480px !important;
+            }
+        }
+
+        aside{
+            height: 115vh !important;
+        }
+
+        .main {
+            grid-template-columns: 180px 1fr !important;
+
+            .setting__profile{
+
+                .profile__blocks {
+                    display: block;
+                    margin: 16px 16px;
+
+                    .upload-picture {
+                        width: 65%;
+
+                        .upload__info{
+                            flex-direction: inherit;
+                            justify-content: space-around;
+                            align-items: inherit;
+                            margin: 20px 16px;
+
+                            .picture-info{
+                                text-align: inherit;
+                            }
+                        }
+                    }
+                    
+                    .block-1{
+                        margin-bottom: 16px;
+                    }
+
+                    .block-2{
+                        .basic-info{
+                            margin-bottom: 16px;
+                        }
+                    }
+                    
+                }
+            } 
+        }
+
+        .info__title h1 {
+            margin: 12px 0;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    body{
+
+        .header{
+            position: fixed;
+            z-index: 200;
+            width: 100%;
+            top: 0;
+        }
+
+        header{
+            .pro-version{
+                position: absolute;
+                top: 63px;
+                width: 100% !important;
+                margin-left: 0 !important;
+                background: #334193;
+                border-radius: 0px !important;
+
+                button{
+                    margin-left: 12px;
+                }
+
+                p{
+                    font-size: 10px !important;
+                }
+
+            }
+        }
+
+        .main{
+            display: block !important;
+            margin-top: 29px;
+            position: relative;
+
+            aside{
+                position: fixed;
+                background: #fff;
+                width: 200px; 
+                z-index: 100;
+            }
+
+            .setting__profile{
+                margin-top: 90px;
+                &-menu{
+                    display: flex;
+
+                    .setting__menu{
+                        height: 55px;
+
+                        nav{
+                            margin-left: 0;
+                            justify-content: center;
+
+                            p{
+                                font-size: 16px;
+                            }
+
+                            button{
+                                margin-right: 15px;
+                            }
+
+                            button:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+
+                .profile__blocks{
+                    margin: 10px 10px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .upload-picture{
+                        width: 100%;
+
+                        .upload__info{
+                            .picture-info{
+                                margin-right: 16px;
+
+                                h1{
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    .block-2{
+                        .basic-info{
+                            form{
+                                display: block;
+                                margin: 16px 10px;
+
+                                .form-group{
+                                    margin-bottom: 20px;
+
+                                    input{
+                                        width: 94%;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .info__title{
+            flex-direction: column;
+            margin-left: 10px;
+
+            h1{
+                font-size: 16px;
+            }
+
+            p{
+                font-size: 14px;
+                margin: 0 0 12px;
+            }
+        }
+
+        .btn-save{
+            margin-left: 10px;
+        }
+    }
+
+    .menu-icon{
+        display: block;
+        background: #fff;
+        cursor: pointer;
+        margin-left: 5px;
+        margin-right: 5%;
+        margin-top: 5px;
+
+        &--cancel{
+            margin: 10px 8px -35px;
+        }
+    }
+
+    .menu--desctop{
+        display: none;
+    }
+    .menu--mobile{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 360px){
+    body{
+        header{
+            .pro-version{
+                height: 45px;
+
+                p{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .main{
+            margin-top: 100px !important;
+
+            .setting__profile{
+                margin-top: 108px;
+                .setting__profile-menu{
+                    .setting__menu{
+                        height: 43px;
+
+                        nav{
+                            button{
+                                p{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+
+                    .profile__blocks{
+                        .block-1{
+                            .upload-picture{
+                                .upload__info{
+                                    .picture-info{
+                                        img{
+                                            width: 100px;
+                                            height: 100px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .not-checkboxes{
+                display: inline-block !important;
+                padding: 12px 12px;
+            }
+
+            .menu--mobile{
+                width: 175px;
+                .menu__header{
+                    padding: 24px 0 0;
+                    .item__img{
+                        width: 80px;
+                        margin-bottom: 0;
+                    }
+                }
+
+                nav{
+                    button{
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    
+}

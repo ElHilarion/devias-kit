@@ -1,0 +1,84 @@
+.basic-info{
+    max-width: 910px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.25);
+    border-radius: 4px;
+    
+
+    &__hr{
+        margin: 0;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 36% 36%;
+        grid-template-rows: 56px 46px 46px;
+        column-gap: 48px;
+        row-gap: 20px;
+        margin: 16px 24px;
+
+        .form{
+            &-group{
+                position: relative;
+
+                label{
+                    background: #fff;
+                    position: absolute;
+                    top: 12px;
+                    left: 16px;
+                    cursor: text;
+
+                    font-weight: 400;
+                    font-size: 16px;
+                    letter-spacing: 0.15px;
+                    color: rgba(0, 0, 0, 0.6);
+                }
+
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    letter-spacing: 0.4px;
+                    color: rgba(0, 0, 0, 0.6);
+                    margin: 3px 16px;
+                }
+
+                input{
+                    width: 100%;
+                    height: 40px;
+                    border: 1px solid rgba(0, 0, 0, 0.32);
+                    border-radius: 4px;
+                    padding-left: 16px;
+
+                    font-weight: 400;
+                    font-size: 16px;
+                    letter-spacing: 0.15px;
+                    color: rgba(0, 0, 0, 0.6);
+
+                    &:focus{
+                        outline: 2px solid #1665D8;
+                        border: 1px solid #fff;
+                    }
+
+                    &:focus ~ label{
+                        top: -10px;
+                        padding: 0 4px;
+
+                        font-size: 14px;
+                        color: #1665D8;
+                    }
+
+                    &:valid ~ label{
+                        display: none;
+                    }
+
+                    &:focus ~ label ~ p{
+                        color: #1665D8;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}

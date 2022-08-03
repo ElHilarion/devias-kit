@@ -1,0 +1,104 @@
+.main{
+    display: grid;
+    grid-template-columns: 270px 1fr ;
+}
+
+.menu-icon{
+    display: none;
+
+    &--cancel{
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+.setting{
+    &__hr{
+        width: 100%;
+        margin: 0;
+    }
+
+    &__profile{
+        margin-left: 2px;
+        .profile__blocks{
+            display: grid;
+            grid-template-columns: 25% auto;
+            margin: 20px 24px;
+        }
+    }
+}
+
+.btn-save{
+    background: #1665D8;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    margin-left: 21px;
+    margin: 16px 24px;
+    cursor: pointer;
+
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+
+    &:focus{
+        background: #ffffff;
+        border: 1px solid rgba(22, 101, 216, 0.1);
+        box-shadow: none;
+        color: #1665D8;
+    }
+}
+
+.info__title{
+    display: flex;
+    align-items: baseline; 
+    margin-left: 24px;
+
+    h1{
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: -0.05px;
+        color: #3A3B3F;
+    }
+
+    p{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 16px;
+        color: #66788A;
+        margin-left: 16px;
+    }
+}
+
+
+
+input[type="checkbox"]{
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #425A70;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+
+    &:after{
+        content: url("../icons/check.svg");
+        margin-top: 3px;
+        margin-left: 2px;
+        display: none;
+    }
+
+    &:checked{
+        background: #1665D8;
+        border: none;
+
+        &:after{
+            display: block;
+        }
+    }
+}
